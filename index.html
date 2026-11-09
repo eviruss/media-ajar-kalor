@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flipbook Interaktif: Petualangan Kalor - Kelas 7 SMP</title>
+  <meta name="description" content="Media Ajar Digital IPA Kelas 7 Materi Kalor dengan Virtual Lab Interaktif, Audio Narator, dan Kuis Bersertifikat.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/labs.css">
+</head>
+<body>
+
+  <!-- APP HEADER -->
+  <header class="app-header">
+    <div class="brand-container">
+      <span class="brand-icon">🔥</span>
+      <div>
+        <h1 class="brand-title">MEDIA AJAR KALOR</h1>
+        <span class="brand-sub">IPA Kelas 7 SMP/MTs • Kurikulum Merdeka</span>
+      </div>
+    </div>
+
+    <div class="header-actions">
+      <button class="header-btn" id="btn-open-toc" title="Buka Daftar Isi">
+        📖 <span class="btn-text">Daftar Isi</span>
+      </button>
+      <button class="header-btn" id="btn-speech" title="Bacakan materi dengan suara narator">
+        🔊 <span class="btn-text">Bacakan Halaman</span>
+      </button>
+      <button class="header-btn" id="btn-toggle-sound" title="Aktifkan / Bisukan Efek Suara">
+        🔊 <span class="btn-text">Suara: Nyala</span>
+      </button>
+      <button class="header-btn" id="btn-fullscreen" title="Layar Penuh">
+        ⛶ <span class="btn-text">Layar Penuh</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- FLIPBOOK VIEWPORT -->
+  <main class="flipbook-viewport" id="flipbook-wrapper">
+    <div class="book-stage" id="book-stage">
+
+      <!-- ================= HALAMAN 0: COVER ================= -->
+      <section class="flip-page cover-page page-visible page-single" data-page-index="0">
+        <div class="cover-badge">⚡ Media Pembelajaran Digital IPA</div>
+        <h2 class="cover-title">PETUALANGAN KALOR</h2>
+        <p class="cover-subtitle">
+          Menjelajahi Rahasia Energi Panas, Kalor Jenis, Perubahan Wujud Zat, dan Trio Perpindahan Kalor dengan Virtual Lab Interaktif.
+        </p>
+
+        <div class="cover-features">
+          <div class="feature-pill">📖 Flipbook Modern</div>
+          <div class="feature-pill">🧪 4 Virtual Lab</div>
+          <div class="feature-pill">🎧 Audio Narator</div>
+          <div class="feature-pill">🏆 Kuis & Sertifikat</div>
+        </div>
+
+        <button class="cover-btn-start" onclick="window.flipbook.goToPage(1)">
+          Buka Buku & Mulai Petualangan ➔
+        </button>
+      </section>
+
+      <!-- ================= HALAMAN 1: SUB-MATERI 1 (KONSEP KALOR & SUHU) ================= -->
+      <section class="flip-page page-hidden" data-page-index="1">
+        <span class="page-chapter-tag">Bab 1 • Pengenalan Energi Panas</span>
+        <h2 class="page-title">Apa Sebenarnya Kalor Itu?</h2>
+        
+        <div class="story-box">
+          ☕ <b>Kisah Secangkir Teh Panas:</b> Pernahkah kamu meletakkan sendok logam di dalam gelas teh yang masih panas? 
+          Beberapa menit kemudian, gagang sendok yang tadinya dingin mendadak terasa hangat. 
+          Ada energi misterius yang berpindah dari teh ke sendok logam tersebut! Energi inilah yang disebut <b>Kalor</b>.
+        </div>
+
+        <p class="page-intro">
+          <b>Kalor</b> adalah bentuk energi panas yang <b>berpindah secara alami</b> dari suatu benda yang bersuhu lebih 
+          <b>TINGGI</b> ke benda yang bersuhu lebih <b>RENDAH</b> sampai kedua benda memiliki suhu yang sama (mencapai kesetimbangan termal).
+        </p>
+
+        <div class="concept-grid">
+          <div class="concept-card">
+            <h4>🌡️ Suhu (Derajat Panas)</h4>
+            <p>Ukuran derajat panas atau dinginnya suatu benda. Diukur menggunakan <b>Termometer</b> dengan satuan internasional (SI) <b>Kelvin (K)</b> atau <b>Celsius (°C)</b>.</p>
+          </div>
+          <div class="concept-card">
+            <h4>🔥 Kalor (Energi Berpindah)</h4>
+            <p>Energi yang sedang mengalir akibat adanya perbedaan suhu. Memiliki satuan internasional (SI) <b>Joule (J)</b> atau satuan umum <b>Kalori (kal)</b>.</p>
+          </div>
+        </div>
+
+        <div class="key-box">
+          <h4>💡 Hubungan Satuan Joule dan Kalori:</h4>
+          <p>Satu kalori didefinisikan sebagai banyaknya kalor untuk menaikkan suhu 1 gram air murni sebesar 1°C.</p>
+          <ul>
+            <li><b>1 Kalori = 4,2 Joule</b></li>
+            <li><b>1 Joule = 0,24 Kalori</b></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 2: VIRTUAL LAB 1 ================= -->
+      <section class="flip-page page-hidden" data-page-index="2">
+        <span class="page-chapter-tag">Virtual Lab 1 • Sub-Materi 1</span>
+        <h2 class="page-title">Lab Kesetimbangan Termal & Asas Black</h2>
+        <p class="page-intro">
+          Amati bagaimana kalor berpindah dari air panas ke air dingin. Campurkan kedua bejana dan temukan suhu akhirnya!
+        </p>
+
+        <div class="lab-container">
+          <div class="lab-title-bar">
+            <span class="lab-title">🧪 Simulasi Pencampuran Dua Air</span>
+            <span class="badge badge-cold">Kurikulum Merdeka Fase D</span>
+          </div>
+
+          <div class="lab-canvas-wrapper">
+            <canvas id="canvas-lab1" class="lab-canvas" width="600" height="290"></canvas>
+          </div>
+
+          <div class="lab-controls">
+            <div class="control-group">
+              <label class="control-label">Massa Air A (Panas): <span class="val" id="lab1-ma-val">200 mL</span></label>
+              <input type="range" class="custom-range" id="lab1-ma" min="100" max="400" step="50" value="200">
+            </div>
+            <div class="control-group">
+              <label class="control-label">Suhu Air A: <span class="val" id="lab1-ta-val">80 °C</span></label>
+              <input type="range" class="custom-range" id="lab1-ta" min="50" max="95" step="5" value="80">
+            </div>
+            <div class="control-group">
+              <label class="control-label">Massa Air B (Dingin): <span class="val" id="lab1-mb-val">200 mL</span></label>
+              <input type="range" class="custom-range" id="lab1-mb" min="100" max="400" step="50" value="200">
+            </div>
+            <div class="control-group">
+              <label class="control-label">Suhu Air B: <span class="val" id="lab1-tb-val">20 °C</span></label>
+              <input type="range" class="custom-range" id="lab1-tb" min="10" max="35" step="5" value="20">
+            </div>
+          </div>
+
+          <div class="lab-btn-row">
+            <button class="btn-lab" id="lab1-btn-mix">🧪 Campurkan Air!</button>
+            <button class="btn-lab btn-lab-secondary" id="lab1-btn-reset">🔄 Reset Lab</button>
+          </div>
+
+          <div id="lab1-result-box">
+            <div class="tip-box">
+              🎯 <b>Tantangan Detektif Termal:</b> Coba ubah volume dan suhu air A dan B agar suhu akhir campuran tepat menjadi <b>50°C</b>!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 3: SUB-MATERI 2 (KALOR JENIS) ================= -->
+      <section class="flip-page page-hidden" data-page-index="3">
+        <span class="page-chapter-tag">Bab 2 • Karakteristik Bahan</span>
+        <h2 class="page-title">Kalor Jenis: Rahasia Kecepatan Panas</h2>
+
+        <div class="story-box">
+          🏖️ <b>Misteri Pasir Pantai vs Air Laut:</b> Pernahkah kamu berjalan tanpa alas kaki di pantai saat siang bolong? 
+          Pasir terasa membakar telapak kakimu! Tapi begitu kamu mencelupkan kaki ke air laut, airnya tetap terasa sejuk menyegarkan. 
+          Padahal matahari menyinari keduanya dengan jumlah panas yang persis sama. Mengapa demikian?
+        </div>
+
+        <p class="page-intro">
+          Jawabannya terletak pada <b>Kalor Jenis ($c$)</b> masing-masing zat!
+        </p>
+
+        <div class="key-box">
+          <h4>📌 Pengertian Kalor Jenis ($c$):</h4>
+          <p>
+            <b>Kalor jenis</b> adalah banyaknya kalor yang dibutuhkan oleh <b>1 kg zat</b> untuk menaikkan suhunya sebesar <b>1°C</b>.
+            Satuan SI untuk kalor jenis adalah <b>$\text{J}/(\text{kg}\cdot^\circ\text{C})$</b>.
+          </p>
+        </div>
+
+        <h4 style="margin: 15px 0 10px; color: #0f172a;">📊 Tabel Kalor Jenis Bahan Sehari-hari:</h4>
+        <div style="overflow-x: auto;">
+          <table style="width: 100%; border-collapse: collapse; font-size: 13px; text-align: left; background: white; border: 1px solid #cbd5e1; border-radius: 8px;">
+            <thead>
+              <tr style="background: #e0f2fe; color: #0369a1;">
+                <th style="padding: 8px 12px; border: 1px solid #cbd5e1;">Nama Bahan</th>
+                <th style="padding: 8px 12px; border: 1px solid #cbd5e1;">Kalor Jenis (J/kg°C)</th>
+                <th style="padding: 8px 12px; border: 1px solid #cbd5e1;">Karakteristik Pemanasan</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;"><b>Air Murni</b></td>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #0284c7; font-weight: 700;">4.200</td>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;">Sangat lambat panas & awet menyimpan panas</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;"><b>Minyak Goreng</b></td>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;">2.200</td>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;">Lebih cepat panas dibanding air</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;"><b>Pasir Pantai</b></td>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;">800</td>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;">Cepat panas di siang hari, cepat dingin di malam hari</td>
+              </tr>
+              <tr>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;"><b>Besi / Logam</b></td>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1; color: #dc2626; font-weight: 700;">450</td>
+                <td style="padding: 8px 12px; border: 1px solid #cbd5e1;">Sangat cepat panas saat terkena api</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 4: VIRTUAL LAB 2 ================= -->
+      <section class="flip-page page-hidden" data-page-index="4">
+        <span class="page-chapter-tag">Virtual Lab 2 • Sub-Materi 2</span>
+        <h2 class="page-title">Lab Balapan Kalor Jenis (Heat Race)</h2>
+        <p class="page-intro">
+          Pilih 2 zat berbeda dengan massa yang sama (500 g). Panaskan dengan kompor yang sama kuatnya, lalu saksikan balapan kenaikan suhu secara live!
+        </p>
+
+        <div class="lab-container">
+          <div class="lab-title-bar">
+            <span class="lab-title">🏁 Balapan Suhu Bahan vs Waktu</span>
+            <span class="badge badge-hot">Target: 80 °C</span>
+          </div>
+
+          <div class="lab-canvas-wrapper">
+            <canvas id="canvas-lab2" class="lab-canvas" width="600" height="290"></canvas>
+          </div>
+
+          <div class="lab-controls">
+            <div class="control-group">
+              <label class="control-label">Pilihan Bahan A:</label>
+              <select class="custom-select" id="lab2-select-a">
+                <option value="air" selected>💧 Air Murni (c = 4200)</option>
+                <option value="minyak">🛢️ Minyak Goreng (c = 2200)</option>
+                <option value="pasir">🏖️ Pasir Pantai (c = 800)</option>
+                <option value="besi">🔩 Besi Logam (c = 450)</option>
+                <option value="tembaga">🪙 Tembaga (c = 390)</option>
+              </select>
+            </div>
+            <div class="control-group">
+              <label class="control-label">Pilihan Bahan B:</label>
+              <select class="custom-select" id="lab2-select-b">
+                <option value="pasir" selected>🏖️ Pasir Pantai (c = 800)</option>
+                <option value="air">💧 Air Murni (c = 4200)</option>
+                <option value="minyak">🛢️ Minyak Goreng (c = 2200)</option>
+                <option value="besi">🔩 Besi Logam (c = 450)</option>
+                <option value="tembaga">🪙 Tembaga (c = 390)</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="lab-btn-row">
+            <button class="btn-lab" id="lab2-btn-start">🔥 Mulai Balapan Pemanasan!</button>
+            <button class="btn-lab btn-lab-secondary" id="lab2-btn-reset">🔄 Reset Balapan</button>
+          </div>
+
+          <div id="lab2-result-box">
+            <div class="tip-box">
+              🏁 Tekan <b>"Mulai Balapan Pemanasan!"</b> untuk melihat kurva pergerakan termometer secara langsung!
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 5: SUB-MATERI 3 (PERHITUNGAN KALOR) ================= -->
+      <section class="flip-page page-hidden" data-page-index="5">
+        <span class="page-chapter-tag">Bab 3 • Menghitung Perubahan Kalor</span>
+        <h2 class="page-title">Rumus Ajaib: Q = m · c · ΔT</h2>
+
+        <p class="page-intro">
+          Besarnya energi kalor yang diserap atau dilepaskan oleh suatu benda dipengaruhi oleh 3 faktor: 
+          <b>Massa benda ($m$)</b>, <b>Kalor jenis zat ($c$)</b>, dan <b>Perubahan suhu ($\Delta T$)</b>.
+        </p>
+
+        <div class="key-box" style="border: 2px solid #0284c7; background: #f0f9ff;">
+          <h3 style="color: #0369a1; margin-bottom: 8px;">🚀 Jembatan Keledai: "Q = Macet"</h3>
+          <div style="font-size: 20px; font-weight: 800; color: #0284c7; margin: 6px 0;">
+            $$Q = m \times c \times \Delta T$$
+          </div>
+          <ul>
+            <li><b>$Q$</b> = Jumlah kalor yang diserap atau dilepas (satuan <b>Joule</b> atau <b>J</b>)</li>
+            <li><b>$m$</b> = Massa benda (satuan <b>kg</b>)</li>
+            <li><b>$c$</b> = Kalor jenis zat (satuan <b>J/kg°C</b>)</li>
+            <li><b>$\Delta T$</b> = Perubahan suhu = $(T_{\text{akhir}} - T_{\text{awal}})$ (satuan <b>°C</b>)</li>
+          </ul>
+        </div>
+
+        <h4 style="margin: 15px 0 8px; color: #0f172a;">🧊 Bagaimana Saat Terjadi Perubahan Wujud?</h4>
+        <div class="story-box" style="background: #f1f5f9; border-color: #64748b; color: #334155;">
+          Saat es melebur menjadi air pada 0°C, atau air mendidih menjadi uap pada 100°C, <b>suhunya tidak naik sama sekali ($\Delta T = 0$)</b>! 
+          Seluruh kalor digunakan untuk memutus ikatan molekul (dinamakan <b>Kalor Laten</b>).
+          <div style="margin-top: 8px;">
+            <b>• Melebur / Membeku:</b> $Q = m \times L$ &nbsp; (Kalor lebur es $L = 336.000\text{ J/kg}$)<br>
+            <b>• Mendidih / Menguap:</b> $Q = m \times U$ &nbsp; (Kalor uap air $U = 2.260.000\text{ J/kg}$)
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 6: VIRTUAL LAB 3 ================= -->
+      <section class="flip-page page-hidden" data-page-index="6">
+        <span class="page-chapter-tag">Virtual Lab 3 • Sub-Materi 3</span>
+        <h2 class="page-title">Simulator Hitung Kalor & Grafik Wujud</h2>
+        <p class="page-intro">
+          Eksplorasi perhitungan kalor secara interaktif atau pelajari diagram kenaikan suhu es hingga menjadi uap air!
+        </p>
+
+        <div class="lab-container">
+          <div class="lab-subtabs">
+            <button class="lab-tab-btn active" id="lab3-tab-calc">🧮 Kalkulator Interaktif (Q = m·c·ΔT)</button>
+            <button class="lab-tab-btn" id="lab3-tab-graph">📈 Grafik Perubahan Wujud Es ➔ Uap</button>
+          </div>
+
+          <div class="lab-canvas-wrapper">
+            <canvas id="canvas-lab3" class="lab-canvas" width="600" height="260"></canvas>
+          </div>
+
+          <!-- KONTROL KALKULATOR -->
+          <div id="lab3-calc-controls">
+            <div class="lab-controls">
+              <div class="control-group">
+                <label class="control-label">Massa Benda ($m$): <span class="val" id="lab3-m-val">1.0 kg</span></label>
+                <input type="range" class="custom-range" id="lab3-m" min="0.2" max="4.0" step="0.2" value="1.0">
+              </div>
+              <div class="control-group">
+                <label class="control-label">Jenis Zat ($c$):</label>
+                <select class="custom-select" id="lab3-substance">
+                  <option value="air" selected>💧 Air (4.200 J/kg°C)</option>
+                  <option value="minyak">🛢️ Minyak (2.200 J/kg°C)</option>
+                  <option value="es">🧊 Es Padat (2.100 J/kg°C)</option>
+                  <option value="aluminium">🥫 Aluminium (900 J/kg°C)</option>
+                  <option value="besi">🔩 Besi (450 J/kg°C)</option>
+                </select>
+              </div>
+              <div class="control-group">
+                <label class="control-label">Suhu Awal ($T_1$): <span class="val" id="lab3-t1-val">20 °C</span></label>
+                <input type="range" class="custom-range" id="lab3-t1" min="10" max="40" step="5" value="20">
+              </div>
+              <div class="control-group">
+                <label class="control-label">Suhu Akhir ($T_2$): <span class="val" id="lab3-t2-val">80 °C</span></label>
+                <input type="range" class="custom-range" id="lab3-t2" min="50" max="100" step="5" value="80">
+              </div>
+            </div>
+
+            <div id="lab3-calc-steps" class="analysis-card mt-3"></div>
+          </div>
+
+          <!-- KONTROL GRAFIK WUJUD -->
+          <div id="lab3-graph-controls" style="display: none;">
+            <div class="lab-subtabs" style="margin-top: 10px;">
+              <button class="lab-tab-btn graph-seg-btn" data-seg="AB">Segmen A-B (Es naik)</button>
+              <button class="lab-tab-btn graph-seg-btn" data-seg="BC">Segmen B-C (Es Lebur)</button>
+              <button class="lab-tab-btn graph-seg-btn active" data-seg="CD">Segmen C-D (Air naik)</button>
+              <button class="lab-tab-btn graph-seg-btn" data-seg="DE">Segmen D-E (Air Mendidih)</button>
+            </div>
+            <div id="lab3-graph-detail"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 7: SUB-MATERI 4 (PERPINDAHAN KALOR) ================= -->
+      <section class="flip-page page-hidden" data-page-index="7">
+        <span class="page-chapter-tag">Bab 4 • Cara Kalor Bergerak</span>
+        <h2 class="page-title">Trio Hebat: Perpindahan Kalor</h2>
+
+        <p class="page-intro">
+          Kalor adalah energi yang selalu ingin berpindah! Di alam semesta, kalor berpindah melalui 3 cara istimewa:
+        </p>
+
+        <div style="display: flex; flex-direction: column; gap: 14px;">
+          <!-- 1. Konduksi -->
+          <div class="concept-card" style="border-left: 4px solid #ef4444;">
+            <h4 style="color: #b91c1c;">1. Konduksi (Hantaran pada Zat Padat)</h4>
+            <p>
+              Perpindahan kalor melalui zat padat <b>tanpa disertai perpindahan partikel-partikel zat tersebut</b>.
+              Hanya getaran partikel yang saling mengestafetkan energi panas.
+            </p>
+            <p style="font-size: 12px; color: #64748b; margin-top: 4px;">
+              Contoh: Ujung sendok logam terasa panas saat mengaduk kuah bakso; dasar wajan cepat panas.
+            </p>
+          </div>
+
+          <!-- 2. Konveksi -->
+          <div class="concept-card" style="border-left: 4px solid #0284c7;">
+            <h4 style="color: #0369a1;">2. Konveksi (Aliran pada Zat Cair & Gas)</h4>
+            <p>
+              Perpindahan kalor yang <b>disertai perpindahan partikel zat perantaranya</b> akibat perbedaan massa jenis.
+              Zat panas memuai, massa jenisnya mengecil, lalu bergerak naik; zat dingin di atasnya turun menggantikan.
+            </p>
+            <p style="font-size: 12px; color: #64748b; margin-top: 4px;">
+              Contoh: Gerakan air mendidih yang bergejolak memutar di panci; Terjadinya <b>Angin Laut</b> dan <b>Angin Darat</b>.
+            </p>
+          </div>
+
+          <!-- 3. Radiasi -->
+          <div class="concept-card" style="border-left: 4px solid #f59e0b;">
+            <h4 style="color: #b45309;">3. Radiasi (Pancaran Gelombang)</h4>
+            <p>
+              Perpindahan kalor dalam bentuk <b>pancaran gelombang elektromagnetik tanpa membutuhkan medium zat perantara</b> sama sekali (dapat merambat di ruang hampa udara).
+            </p>
+            <p style="font-size: 12px; color: #64748b; margin-top: 4px;">
+              Contoh: Panas matahari sampai ke bumi menembus angkasa; kehangatan saat duduk di depan api unggun.
+            </p>
+          </div>
+        </div>
+
+        <div class="key-box" style="margin-top: 16px;">
+          <h4>🍶 Penerapan Keren: Termos Air Panas</h4>
+          <p>
+            Termos dibuat dengan dinding kaca berlapis perak (mencegah radiasi), ruang hampa udara di tengahnya (mencegah konduksi dan konveksi), serta tutup sumbat dari isolator gabus/plastik. Air tetap panas hingga berjam-jam!
+          </p>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 8: VIRTUAL LAB 4 ================= -->
+      <section class="flip-page page-hidden" data-page-index="8">
+        <span class="page-chapter-tag">Virtual Lab 4 • Sub-Materi 4</span>
+        <h2 class="page-title">Laboratorium Trio Perpindahan Kalor</h2>
+        <p class="page-intro">
+          Pilih metode perpindahan kalor di bawah ini dan uji sendiri bagaimana kalor merambat, mengalir, dan memancar!
+        </p>
+
+        <div class="lab-container">
+          <div class="lab-subtabs">
+            <button class="lab-tab-btn lab4-main-tab active" id="lab4-tab-konduksi">🔥 Lab 1: Konduksi Logam</button>
+            <button class="lab-tab-btn lab4-main-tab" id="lab4-tab-konveksi">🌊 Lab 2: Konveksi Fluida</button>
+            <button class="lab-tab-btn lab4-main-tab" id="lab4-tab-radiasi">☀️ Lab 3: Radiasi Termal</button>
+          </div>
+
+          <div class="lab-canvas-wrapper">
+            <canvas id="canvas-lab4" class="lab-canvas" width="600" height="280"></canvas>
+          </div>
+
+          <!-- SUBPANEL KONDUKSI -->
+          <div class="lab4-subpanel" id="lab4-panel-konduksi">
+            <div class="lab-btn-row">
+              <button class="btn-lab" id="lab4-btn-start-konduksi">🔥 Nyalakan Api & Amati Paku Meleleh</button>
+              <button class="btn-lab btn-lab-secondary" id="lab4-btn-reset-konduksi">🔄 Reset Batang</button>
+            </div>
+          </div>
+
+          <!-- SUBPANEL KONVEKSI -->
+          <div class="lab4-subpanel" id="lab4-panel-konveksi" style="display: none;">
+            <div class="lab-subtabs">
+              <button class="lab-tab-btn active" id="lab4-submode-panci">Panci Air Mendidih</button>
+              <button class="lab-tab-btn" id="lab4-submode-pantai">Siklus Angin Pantai (Darat / Laut)</button>
+            </div>
+            <div class="lab-btn-row" id="lab4-panci-ctrls">
+              <button class="btn-lab" id="lab4-btn-boil">🔥 Nyalakan Pemanas & Teteskan Zat Warna</button>
+            </div>
+            <div class="lab-btn-row" id="lab4-pantai-ctrls" style="display: none;">
+              <button class="btn-lab" id="lab4-btn-toggle-beach">🌙 Ubah ke Waktu Malam (Angin Darat)</button>
+            </div>
+          </div>
+
+          <!-- SUBPANEL RADIASI -->
+          <div class="lab4-subpanel" id="lab4-panel-radiasi" style="display: none;">
+            <div class="lab-btn-row">
+              <button class="btn-lab" id="lab4-btn-toggle-radiasi">💡 Nyalakan Lampu Radiasi</button>
+              <button class="btn-lab btn-lab-secondary" id="lab4-btn-reset-radiasi">🔄 Reset Termometer</button>
+            </div>
+          </div>
+
+          <div id="lab4-result-box" style="margin-top: 12px;"></div>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 9: RANGKUMAN SUPER ================= -->
+      <section class="flip-page page-hidden" data-page-index="9">
+        <span class="page-chapter-tag">Rangkuman Materi • Pintasan Cerdas</span>
+        <h2 class="page-title">Peta Konsep & Intisari Materi Kalor</h2>
+
+        <div class="key-box" style="background: #ffffff; border: 2px solid #0284c7;">
+          <h4 style="color: #0369a1; font-size: 16px;">🧠 4 Pilar Utama Pembelajaran Kalor:</h4>
+          
+          <div style="margin-top: 10px; display: flex; flex-direction: column; gap: 12px;">
+            <div>
+              <b style="color: #0f172a;">1. Hakikat Kalor:</b>
+              <p style="font-size: 13px; color: #475569;">
+                Kalor adalah energi panas yang mengalir akibat perbedaan suhu (suhu tinggi ➔ suhu rendah). 
+                Satuan: Joule (SI) & Kalori ($1\text{ kal} = 4,2\text{ J}$).
+              </p>
+            </div>
+
+            <div>
+              <b style="color: #0f172a;">2. Kalor Jenis ($c$):</b>
+              <p style="font-size: 13px; color: #475569;">
+                Kemampuan zat menyerap kalor. Semakin KECIL kalor jenis bahan, semakin CEPAT ia memanas dan mendingin.
+              </p>
+            </div>
+
+            <div>
+              <b style="color: #0f172a;">3. Rumus Perubahan Kalor & Wujud:</b>
+              <p style="font-size: 13px; color: #475569;">
+                • Mengubah suhu: $Q = m \cdot c \cdot \Delta T$<br>
+                • Meleburkan benda padat: $Q = m \cdot L$<br>
+                • Menguapkan zat cair: $Q = m \cdot U$
+              </p>
+            </div>
+
+            <div>
+              <b style="color: #0f172a;">4. Trio Perpindahan Kalor:</b>
+              <p style="font-size: 13px; color: #475569;">
+                • <b>Konduksi:</b> rambatan partikel padat tanpa zatnya berpindah.<br>
+                • <b>Konveksi:</b> aliran fluida (cair & gas) disertai perpindahan massa zat.<br>
+                • <b>Radiasi:</b> pancaran gelombang elektromagnetik tanpa butuh media.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 24px;">
+          <p style="font-size: 15px; color: #334155; margin-bottom: 12px; font-weight: 600;">
+            Siap menguji pemahamanmu dan meraih Sertifikat Ahli Kalor Cilik?
+          </p>
+          <button class="nav-btn" onclick="window.flipbook.goToPage(10)" style="display: inline-flex;">
+            Buka Kuis & Tantangan ➔
+          </button>
+        </div>
+      </section>
+
+      <!-- ================= HALAMAN 10: KUIS & SERTIFIKAT ================= -->
+      <section class="flip-page page-hidden" data-page-index="10">
+        <span class="page-chapter-tag">Evaluasi Belajar • Uji Kompetensi</span>
+        <h2 class="page-title">Kuis Tantangan Ahli Kalor Cilik</h2>
+        <p class="page-intro">
+          Jawab 5 pertanyaan di bawah ini. Raih skor minimal <b>60 poin</b> untuk membuka Sertifikat Kelulusan resmi!
+        </p>
+
+        <div id="quiz-container"></div>
+
+        <div class="lab-btn-row" style="margin-top: 15px;">
+          <button class="btn-lab" id="quiz-btn-submit">✅ Periksa Jawaban & Hitung Skor</button>
+          <button class="btn-lab btn-lab-secondary" id="quiz-btn-reset">🔄 Ulangi Kuis</button>
+        </div>
+
+        <div id="quiz-score-summary" style="display: none;"></div>
+
+        <!-- SECTION SERTIFIKAT DIGITAL -->
+        <div id="certificate-section" class="cert-box" style="display: none;">
+          <h3 style="color: #b45309; margin-bottom: 8px;">🎓 Klaim Sertifikat Ahli Kalor</h3>
+          <p style="font-size: 13px; color: #475569; margin-bottom: 14px;">
+            Ketikkan nama lengkapmu di bawah ini untuk dicetak pada sertifikat penghargaan:
+          </p>
+          
+          <div>
+            <input type="text" id="student-name-input" class="cert-input" placeholder="Masukkan Nama Lengkapmu..." maxlength="35">
+            <br>
+            <button class="btn-lab" id="btn-claim-cert">🖨️ Terbitkan Sertifikat Saya</button>
+          </div>
+
+          <div id="cert-canvas-container" style="display: none;">
+            <canvas id="cert-canvas" width="800" height="520"></canvas>
+            <div style="margin-top: 14px;">
+              <button class="btn-lab" id="btn-download-cert">💾 Unduh Sertifikat (Gambar PNG)</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- BOTTOM NAVIGATION BAR -->
+  <footer class="app-footer">
+    <button class="nav-btn" id="btn-prev-page" title="Halaman Sebelumnya">
+      ⬅ <span class="btn-text">Sebelumnya</span>
+    </button>
+
+    <div class="page-indicator-text" id="page-indicator">
+      Sampul Depan (Cover)
+    </div>
+
+    <button class="nav-btn" id="btn-next-page" title="Halaman Berikutnya">
+      <span class="btn-text">Berikutnya</span> ➔
+    </button>
+  </footer>
+
+  <!-- MODAL DAFTAR ISI -->
+  <div class="modal-overlay" id="modal-toc">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">📖 Daftar Isi Buku</h3>
+        <button class="modal-close-btn" id="btn-close-toc">✕</button>
+      </div>
+
+      <div class="toc-list">
+        <div class="toc-item" data-page="0">
+          <span class="toc-item-title">📘 Sampul Depan (Cover)</span>
+          <span class="toc-item-page">Hal 0</span>
+        </div>
+        <div class="toc-item" data-page="1">
+          <span class="toc-item-title">1. Pengertian Kalor & Hubungan dengan Suhu</span>
+          <span class="toc-item-page">Hal 1</span>
+        </div>
+        <div class="toc-item" data-page="2">
+          <span class="toc-item-title">🧪 Virtual Lab 1: Kesetimbangan Termal</span>
+          <span class="toc-item-page">Hal 2</span>
+        </div>
+        <div class="toc-item" data-page="3">
+          <span class="toc-item-title">2. Kalor Jenis: Siapa Lebih Cepat Panas?</span>
+          <span class="toc-item-page">Hal 3</span>
+        </div>
+        <div class="toc-item" data-page="4">
+          <span class="toc-item-title">🏁 Virtual Lab 2: Balapan Kalor Jenis</span>
+          <span class="toc-item-page">Hal 4</span>
+        </div>
+        <div class="toc-item" data-page="5">
+          <span class="toc-item-title">3. Perhitungan Kalor (Q = Macet) & Wujud</span>
+          <span class="toc-item-page">Hal 5</span>
+        </div>
+        <div class="toc-item" data-page="6">
+          <span class="toc-item-title">🧮 Virtual Lab 3: Simulator Perhitungan Kalor</span>
+          <span class="toc-item-page">Hal 6</span>
+        </div>
+        <div class="toc-item" data-page="7">
+          <span class="toc-item-title">4. Trio Perpindahan: Konduksi, Konveksi, Radiasi</span>
+          <span class="toc-item-page">Hal 7</span>
+        </div>
+        <div class="toc-item" data-page="8">
+          <span class="toc-item-title">🔥 Virtual Lab 4: Laboratorium Perpindahan Kalor</span>
+          <span class="toc-item-page">Hal 8</span>
+        </div>
+        <div class="toc-item" data-page="9">
+          <span class="toc-item-title">📝 Rangkuman Super & Peta Konsep</span>
+          <span class="toc-item-page">Hal 9</span>
+        </div>
+        <div class="toc-item" data-page="10">
+          <span class="toc-item-title">🏆 Kuis Tantangan & Cetak Sertifikat</span>
+          <span class="toc-item-page">Hal 10</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- JAVASCRIPT MODULES -->
+  <script src="js/sound.js"></script>
+  <script src="js/lab1.js"></script>
+  <script src="js/lab2.js"></script>
+  <script src="js/lab3.js"></script>
+  <script src="js/lab4.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/flipbook.js"></script>
+</body>
+</html>
